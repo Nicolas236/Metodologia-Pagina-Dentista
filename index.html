@@ -243,8 +243,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Make an Appointment</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Solicitar un turno</h2>
+          <p>Complete el formulario con su información y una fecha tentativa para su turno. Luego nos pondremos en contacto para evaluar su solicitud.</p>
         </div>
 
         <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
@@ -263,28 +263,12 @@
             </div>
           </div>
           <div class="form-row">
-            <div class="col-md-4 form-group">
+            <div class="col-md-4 form-group" id="fecha-turno">
               <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
-            <div class="col-md-4 form-group">
-              <select name="department" id="department" class="form-control">
-                <option value="">Select Department</option>
-                <option value="Department 1">Department 1</option>
-                <option value="Department 2">Department 2</option>
-                <option value="Department 3">Department 3</option>
-              </select>
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group">
-              <select name="doctor" id="doctor" class="form-control">
-                <option value="">Select Doctor</option>
-                <option value="Doctor 1">Doctor 1</option>
-                <option value="Doctor 2">Doctor 2</option>
-                <option value="Doctor 3">Doctor 3</option>
-              </select>
-              <div class="validate"></div>
-            </div>
+            
+            
           </div>
 
           <div class="form-group">
