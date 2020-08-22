@@ -110,11 +110,6 @@ h6 {
   padding: 20px !important;
 }
 
-#fecha-turno{
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
@@ -589,17 +584,6 @@ section {
   left: calc(50% - 20px);
 }
 
-.section-title-Estetico h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: #ec8e16c4;
-  bottom: 0;
-  left: calc(50% - 20px);
-}
-
 .section-title p {
   margin-bottom: 0;
 }
@@ -1002,11 +986,6 @@ section {
   border-color: #1977cc;
 }
 
-#services-Esteticos .icon-box:hover {
-  background: #ec8e16c4;
-  border-color: #ec8e16c4;
-}
-
 .services .icon-box:hover .icon {
   background: #fff;
 }
@@ -1283,7 +1262,7 @@ section {
 # Seccion contacto-mapa
 --------------------------------------------------------------*/
 
-#seccionContacto-Mapa {
+#seccionContacto-Mapa{
   float: right;
 }
 
