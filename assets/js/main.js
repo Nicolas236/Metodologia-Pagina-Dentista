@@ -223,9 +223,9 @@
 
   function warningMessage() {
     swal({
-      title: "Aclaracion",
+      title: "Aclaración",
       text:
-        "El contenido mostrado en esta web (la empresa, la marca, los datos de contacto, etc) es de caracter ficticio y/o falso. Esta web es solo un proyecto universitario.",
+        "El contenido mostrado en esta web (la empresa, la marca, los datos de contacto, etc.) es de carácter ficticio y/o falso. Esta web es solo un proyecto universitario.",
       icon: "warning",
       button: {
         text: "Entendido",
