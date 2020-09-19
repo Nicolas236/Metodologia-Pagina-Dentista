@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Solicitar Turno</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Third party plugin CSS-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      id="fontawesome-css"
+      href="https://use.fontawesome.com/releases/v5.0.1/css/all.css?ver=4.9.1"
+      type="text/css"
+      media="all"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/extra-styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_LnP7CPJwQZV1LZA0imZFd");
+      })();
+    </script>
+  </head>
+
+  <body id="page-top">
+    <div class="container contact-banner">
+      <a class="navbar-brand js-scroll-trigger" href="index.html"
+        ><img src="assets/img/logo.png" alt=""
+      /></a>
+    </div>
+
+    <div class="bg-contact2">
+      <div class="container-contact2">
+        <div class="wrap-contact2">
+          <form class="contact2-form validate-form">
+            <span class="contact2-form-title">Solicita tu turno</span>
+
+            <div
+              class="wrap-input2 validate-input"
+              data-validate="Este campo es obligatorio"
+            >
+              <input class="input2" type="text" name="name" />
+              <span
+                class="focus-input2"
+                data-placeholder="Nombre y Apellido"
+              ></span>
+            </div>
+
+            <div
+              class="wrap-input2 validate-input"
+              data-validate="Un E-Mail valido es obligatorio"
+            >
+              <input class="input2" type="text" name="email" />
+              <span
+                class="focus-input2"
+                data-placeholder="E-mail de Contacto"
+              ></span>
+            </div>
+
+            <div
+              class="wrap-input2 validate-input"
+              data-validate="Un numero de telefono valido es obligatorio"
+            >
+              <input class="input2" type="text" name="phone" />
+              <span
+                class="focus-input2"
+                data-placeholder="Número telefono"
+              ></span>
+            </div>
+            <!--fecha-->
+            <div>
+            </span>
+                <p>Dia: <input id="date" type="date" name="date"/></p>
+                <p>Hora: <input type="time" id="hora" name="hour"
+                    min="09:00" max="18:00" required> </p>
+              <span>
+                  <br>
+                  <br>
+            </div>
+
+            <!--Imagen-->
+            <div>
+              <label for="avatar">Adjunte una imagen:</label>
+
+              <input
+                type="file"
+                id="foto"
+                name="foto"
+                accept="image/png, image/jpeg"
+              />
+              <br>
+              <br>
+            </div>
+
+            <div
+              class="wrap-input2 validate-input"
+              data-validate="El mensaje es obligatorio"
+            >
+              <textarea class="input2" name="message"></textarea>
+              <span
+                class="focus-input2"
+                data-placeholder="Mensaje adicional"
+              ></span>
+            </div>
+
+            <div class="container-contact2-form-btn">
+              <div class="wrap-contact2-form-btn">
+                <button class="btn btn-primary btn-xl js-scroll-trigger">
+                  Enviar
+                </button>
+                <br>
+                <br>
+              </div>
+            </div>
+            <div class="small text-center text-muted font-italic info-footer">
+              Gracias por contactarte!
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-light py-5">
+      <div class="container">
+        <div class="small text-center text-muted">
+          Copyright © 2020 - Drachen Software
+        </div>
+        <div class="small text-center text-muted font-italic info-footer">
+          Proyecto web creado como asignatura para la materia Metodologia de
+          Sistemas, perteneciente a la carrera Tecnicatura Universitaria en
+          Programacion, dictada en la Universidad Tecnologica Nacional
+        </div>
+      </div>
+    </footer>
+
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/contact.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-23581568-13");
+    </script>
+  </body>
+</html>

@@ -1,45 +1,13 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'nicolasmartinez864@gmail.com';
+ini_set('display_errors', 1);
+error_reporting( E_ALL );
+$from = "fede_z2010@hotmail.com";
+$to = "fedebenitez1996@gmail.com";
+$subject = "hola mundo";
+$message = "Funciona el email loko";;
+$headers = "From:" . $from;
+mail($to,$subject,$message,$headers);
+echo "el email fue enviado."
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
-
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = 'Online Appointment Form';
-
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
-
-  $contact->add_message( $_POST['name'], 'Name');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['phone'], 'Phone');
-  $contact->add_message( $_POST['date'], 'Appointment Date');
-  $contact->add_message( $_POST['department'], 'Department');
-  $contact->add_message( $_POST['doctor'], 'Doctor');
-  $contact->add_message( $_POST['message'], 'Message');
-
-  echo $contact->send();
 ?>

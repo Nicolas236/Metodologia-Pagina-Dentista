@@ -311,45 +311,8 @@
 
         <div class="section-title">
           <h2>Solicitar un turno</h2>
-          <p>Complete el formulario con su información y una fecha tentativa para su turno. Luego nos pondremos en contacto para evaluar su solicitud.</p>
         </div>
-
-        <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
-          <div class="form-row">
-            <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email">
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="col-md-4 form-group" id="fecha-turno">
-              <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Fecha de Turno" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            
-            
-          </div>
-
-          <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Mensaje (opcional)"></textarea>
-            <div class="validate"></div>
-          </div>
-          <div class="mb-3">
-            <div class="loading">Cargando</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Su solicitud de turno a sido enviada con exito. ¡Muchas gracias!</div>
-          </div>
-          <div class="text-center"><button type="submit">Saque un turno</button></div>
-        </form>
-
+        <a href="./turno.html"><button class="btn btn-info btn-block" type="submit">Solicitar</button></a>
       </div>
     </section>    
     <!-- End Appointment Section -->    
