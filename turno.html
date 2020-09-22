@@ -42,6 +42,8 @@
             emailjs.init("user_LnP7CPJwQZV1LZA0imZFd");
         })();
   </script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
   
 </head>
 
@@ -104,46 +106,53 @@
 
         <div class="form-row">
             <div class="col-md-4 form-group">
-                <label for="cars">Tipo de Consulta</label>
+                <label for="cars">Tipo de Consulta (<a href="index.html#services">Puede consultar los servicios ofrecidos aqui</a>)</label>
 
-                <select class="form-control" name="cars" id="cars">
-                  <option value="volvo">1</option>
-                  <option value="saab">2</option>
-                  <option value="mercedes">3</option>
-                  <option value="audi">4</option>
+                <select class="form-control" name="cars" id="type">
+                  <option value="Tratamientos Dentales - Relevamiento Bucal">Tratamientos Dentales - Relevamiento Bucal</option>
+                  <option value="Tratamientos Dentales - Restauración de piezas dentales">Tratamientos Dentales - Restauración de piezas dentales </option>
+                  <option value="Tratamientos Dentales - Tratamiento de caries">Tratamientos Dentales - Tratamiento de caries</option>
+                  <option value="Tratamientos Dentales - Endodoncia (Tratamiento de Conducto)">Tratamientos Dentales - Endodoncia (Tratamiento de Conducto)</option>
+                  <option value="Tratamientos Dentales - Extracción de piezas dentales">Tratamientos Dentales - Extracción de piezas dentales</option>
+                  <option value="Tratamientos Estéticos - Blanqueamiento bucal">Tratamientos Estéticos - Blanqueamiento bucal</option>
+                  <option value="Tratamientos Estéticos - Carillas de Cerámica">Tratamientos Estéticos - Carillas de Cerámica</option>
+                  <option value="Tratamientos Estéticos - Carillas de Porcelana">Tratamientos Estéticos - Carillas de Porcelana</option>
+                  <option value="Tratamientos Estéticos - Carillas de Cerómeros">Tratamientos Estéticos - Carillas de Cerómeros</option>
+                  <option value="Tratamientos Estéticos - Implantes">Tratamientos Estéticos - Implantes</option>
+                  <option value="Tratamientos Estéticos - Ortodoncia estética">Tratamientos Estéticos - Ortodoncia estética</option>
                 </select> 
             </div>
             <div class="col-md-4 my-1">
                 <h6 style="text-align: center;">Preferencia de Dias</h6>
                 <div style="text-align: center;" class="custom-control custom-checkbox mr-sm-2">
-                  <input type="checkbox" class="custom-control-input" id="lunes">
+                  <input value="Lunes" name="day" type="checkbox" class="custom-control-input" id="lunes">
                   <label class="custom-control-label" for="lunes">Lunes</label>
                 </div>
                 <div style="text-align: center;" class="custom-control custom-checkbox mr-sm-2">
-                    <input type="checkbox" class="custom-control-input" id="martes">
+                    <input value="Martes" name="day" type="checkbox" class="custom-control-input" id="martes">
                     <label class="custom-control-label" for="martes">Martes</label>
                   </div>
                   <div style="text-align: center;" class="custom-control custom-checkbox mr-sm-2">
-                    <input type="checkbox" class="custom-control-input" id="miercoles">
+                    <input value="Miercoles" name="day" type="checkbox" class="custom-control-input" id="miercoles">
                     <label class="custom-control-label" for="miercoles">Miercoles</label>
                   </div>
                   <div style="text-align: center;" class="custom-control custom-checkbox mr-sm-2">
-                    <input type="checkbox" class="custom-control-input" id="jueves">
+                    <input value="Jueves" name="day" type="checkbox" class="custom-control-input" id="jueves">
                     <label class="custom-control-label" for="jueves">Jueves</label>
                   </div>
                   <div style="text-align: center;" class="custom-control custom-checkbox mr-sm-2">
-                    <input type="checkbox" class="custom-control-input" id="viernes">
+                    <input value="Viernes" name="day" type="checkbox" class="custom-control-input" id="viernes">
                     <label class="custom-control-label" for="viernes">Viernes</label>
                   </div>
             </div>
             <div class="col-md-4 my-1">
                 <h6 style="text-align: center;">Preferencia de Horarios</h6>
                 <div style="text-align: center;" class="custom-control custom-checkbox mr-sm-2">
-                  <input type="checkbox" class="custom-control-input" id="mañana">
+                  <input name="moment" type="checkbox" class="custom-control-input" id="mañana" value="Mañana">
                   <label class="custom-control-label" for="mañana">Por la Mañana</label>
                 </div>
                 <div style="text-align: center;" class="custom-control custom-checkbox mr-sm-2">
-                    <input type="checkbox" class="custom-control-input" id="tarde">
+                    <input value="Tarde" name="moment" type="checkbox" class="custom-control-input" id="tarde">
                     <label class="custom-control-label" for="tarde">Por la Tarde</label>
                   </div>
                 
@@ -160,7 +169,7 @@
         
 
         <div class="form-group">
-          <textarea class="form-control" name="msg" rows="5" placeholder="Mensaje (opcional)"></textarea>
+          <textarea id="msg" class="form-control" name="msg" rows="5" placeholder="Mensaje (opcional)"></textarea>
           <div class="validate"></div>
         </div>
         <!-- <div class="mb-3">
