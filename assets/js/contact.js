@@ -71,7 +71,7 @@ function getCheckboxes() {
     });
 
     selectedValues[0] = days.length == 0 ? "No especifica" : days.join(", ");
-    selectedValues[1] = hours.length == 0 ? "No especifica" : days.join(", ");
+    selectedValues[1] = hours.length == 0 ? "No especifica" : hours.join(", ");
 
     return selectedValues;
 }
