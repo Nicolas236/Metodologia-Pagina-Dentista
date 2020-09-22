@@ -5,6 +5,7 @@ const tel = $("#tel");
 const msg = $("#msg");
 const selectBox = $("#type");
 const btn = $("#submit");
+const fileInput = $("#ficha");
 let img = "";
 
 const errorList = $("#errorList");
@@ -46,7 +47,10 @@ function validate() {
         check = false;
     }
 
-    console.log(check);
+    if (fileInput.val() === null || fileInput.val() === "") {
+        check = false;
+        errorList.append("<li>Debe agregar su ficha medica</li>");
+    }
 
     if (!check) {
         $(".error-div").css("display", "block");
@@ -127,10 +131,7 @@ $("form").on("submit", function (event) {
 
     btn.text("Enviando...");
 
-    const serviceID = "default_service";
-    const templateID = "template_3sgl7e3";
-
-    const selectedValue = selectBox.children("option:selected").val();
+    const selectedValue = selectBox.children("option:selected").val(); //tipo de consulta
 
     const checkBoxes = getCheckboxes();
 
@@ -157,10 +158,12 @@ $("form").on("submit", function (event) {
         Dia(s) preferido(s): ${days} <br />
         Horario(s) preferido(s): ${hours} <br />
         Mensaje: ${msg.val()} <br />
+
+        <strong>Ficha medica adjunta</strong>
         `,
         Attachments: [
             {
-                name: "smtpjs.png",
+                name: `FM - ${name.val().toUpperCase()}.png`,
                 data: img,
             },
         ],
@@ -181,6 +184,7 @@ $("form").on("submit", function (event) {
                 },
             });
             form.reset();
+            fileInput.val(null);
         },
         (err) => {
             btn.text("Solicitar Turno");
