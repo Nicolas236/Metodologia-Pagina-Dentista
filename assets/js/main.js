@@ -226,6 +226,7 @@
         });
     });
 
+    /*
     function warningMessage() {
         swal({
             title: "Aclaración",
@@ -241,4 +242,6 @@
             },
         });
     }
+    */
+   
 })(jQuery);
